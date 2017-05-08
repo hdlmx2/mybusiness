@@ -68,18 +68,65 @@
         /*var now = Date.parse('2015-06-24T19:49:22.875+08:00');
          var nowday=new Date(now);
          alert(nowday);*/
-        var xiaoming = {
-            name: "xiaoming",
-            age: 12,
-            height: 1.65,
-            grade: null,
-            'middle-school': '\"W3C\" Middle School',
-            skills: ['JavaScript', 'Java', 'Python', 'Lisp']
+        /* var xiaoming = {
+         name: "xiaoming",
+         age: 12,
+         height: 1.65,
+         grade: null,
+         'middle-school': '\"W3C\" Middle School',
+         skills: ['JavaScript', 'Java', 'Python', 'Lisp']
+         }
+         console.log(JSON.stringify(xiaoming, ['name', 'skills'], '  '));*/
+        /*  function success(text) {
+         var textarea = document.getElementById('test-response-text');
+         textarea.value = text;
+         }
+
+         function fail(code) {
+         var textarea = document.getElementById('test-response-text');
+         textarea.value = 'Error code: ' + code;
+         }
+         var request = new XMLHttpRequest();
+         request.onreadystatechange = function () {
+         if (request.readyState == 4) {
+         if (request.status == 200) {
+         return success(request.responseText);
+         } else {
+         request
+         fail(request.status);
+         }
+         } else {
+
+         }
+         }
+
+         request.open('GET', '/api/categories');
+         request.send();
+
+         alert('请求已发送，请等待响应...');*/
+        //alert('ss');
+        function abc() {
+            var pAttribute = document.getElementsByTagName("p");
+            for (var i = 0; i < pAttribute.length; i++) {
+                alert(pAttribute[i].getAttribute("title"));
+            }
+
         }
-        console.log(JSON.stringify(xiaoming, ['name', 'skills'], '  '));
+        function setElementAttribute() {
+            var p = document.getElementsByTagName("p");
+            for (var i = 0; i < p.length; i++) {
+                p[i].setAttribute("title", "p tag");
+            }
+        }
+
     </script>
 </head>
 <body>
 
+<p id="p1" title="p标签1">这个p>标签1</p>
+<p id="p2" title="p标签2">这个p>标签2</p>
+<p id="p3" title="p标签3">这个p>标签3</p>
+<button onclick="setElementAttribute()">run</button>
+<span onclick="abc()">sss</span>
 </body>
 </html>

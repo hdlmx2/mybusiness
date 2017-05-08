@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showPic(whichpic) {
+            var source = whichpic.getAttribute("href");
+            var placetag = document.getElementById("place");
+            placetag.setAttribute("src", source);
+            ;
+
+        }
+    </script>
+</head>
+<body>
+<h1>相册</h1>
+<ul>
+    <li><a href="image/p1.jpg" title="图片1" onclick="showPic(this);return false">图片1</a></li>
+    <li><a href="image/p2.jpg" title="图片2" onclick="showPic(this);return false">图片2</a></li>
+</ul>
+<img src="image/timg.jpg" id="place" alt="my image gallery"/>
+</body>
+</html>
