@@ -1,0 +1,44 @@
+body {
+    font-family: "Helvetica", "Arial";
+    color: #333;
+    background-color: #CCC;
+    margin: 1em 10%;
+}
+
+h1 {
+    color: #333;
+    background-color: transparent;
+}
+
+a {
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    float: left;
+    padding: 1em;
+    list-style: none;
+}
+
+#imagegallery {
+    list-style: none;
+}
+
+#imagegallery li {
+    display: inline;
+}
+
+#imagegallery a li img {
+    border: 0;
+}
+#imagegallery img{
+    width:80px;
+    height: 60px;
+}

@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="js/myjs.js">
-
-    </script>
-    <script>
-        alert(1 === true);
-        window.onload = prepareGallery;
-
-    </script>
+    <script src="js/myjs.js"></script>
+    <style>
+        @import "css/style.css";
+    </style>
 </head>
 <body>
 <h1>相册</h1>
-<ul id="imageGallery">
-    <li><a class="popup" href="image/bigben.jpg" title="bigben" onclick="showPic(this);return false">bigben</a></li>
+<ul id="imagegallery">
+   <li><a class="popup" href="image/bigben.jpg" title="bigben" onclick="showPic(this);return false"><img
+            src="image/bigben.jpg"></a></li>
+    <li><a class="popup" href="image/coffee.jpg" title="coffee" onclick="showPic(this);return false"><img
+            src="image/coffee.jpg"></a></li>
+    <li><a class="popup" href="image/fireworks.jpg" title="fireworks" onclick="showPic(this);return false"><img
+            src="image/fireworks.jpg"></a>
+    </li>
+    <li><a class="popup" href="image/rose.jpg" title="rose" onclick="showPic(this);return false"><img
+            src="image/rose.jpg"></a></li>
+    <!--<li><a class="popup" href="image/bigben.jpg" title="bigben" onclick="showPic(this);return false">bigben</a></li>
     <li><a class="popup" href="image/coffee.jpg" title="coffee" onclick="showPic(this);return false">coffee</a></li>
     <li><a class="popup" href="image/fireworks.jpg" title="fireworks" onclick="showPic(this);return false">fireworks</a>
     </li>
-    <li><a class="popup" href="image/rose.jpg" title="rose" onclick="showPic(this);return false">rose</a></li>
-    <!--<li><a class="popup" href="https://www.baidu.com">百度</a></li>
-    <li><a class="popup" href="http://www.qq.com">腾讯</a></li>
-    <li><a class="popup" href="https://www.jd.com">京东</a></li>-->
+    <li><a class="popup" href="image/rose.jpg" title="rose" onclick="showPic(this);return false">rose</a></li>-->
 
 </ul>
-<img  src="image/timg.jpg" id="place" alt="my image gallery"/>
+<img src="image/placeholder.gif" id="place" alt="my image gallery"/>
 <br>
 <span id="imgTitle">请选择你的图片</span>
 </body>
