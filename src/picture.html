@@ -7,14 +7,30 @@
 
     </script>
     <script>
-        //popUp()
+        alert(1 === true);
+        window.onload = prepareLinks;
+        function prepareLinks() {
+            var links = document.getElementsByTagName("a");
+            for (var i = 0; i < i.length; i++) {
+                if (links[i].getAttribute("class") === "popup") {
+                    links[i].onclick = function () {
+                        popUp(this.getAttribute("href"));
+                        return false;
+                    }
+                }
+            }
+        }
     </script>
 </head>
 <body>
 <h1>相册</h1>
-<ul>
+<ul id="imageGallery">
     <li><a class="popup" href="image/p1.jpg" title="图片1" onclick="showPic(this);return false">图片1</a></li>
     <li><a class="popup" href="image/p2.jpg" title="图片2" onclick="showPic(this);return false">图片2</a></li>
+    <li><a class="popup" href="https://www.baidu.com">百度</a></li>
+    <li><a class="popup" href="http://www.qq.com">腾讯</a></li>
+    <li><a class="popup" href="https://www.jd.com">京东</a></li>
+
 </ul>
 <img width="400px" height="400px" src="image/timg.jpg" id="place" alt="my image gallery"/>
 <br>
