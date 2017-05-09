@@ -38,7 +38,8 @@ li {
 #imagegallery a li img {
     border: 0;
 }
-#imagegallery img{
-    width:80px;
+
+#imagegallery img {
+    width: 80px;
     height: 60px;
 }
