@@ -8,6 +8,11 @@
             var para = document.getElementById("example");
             alert(typeof para.nodeName);
             alert(typeof  para.style);
+            alert("the color is " + para.style.fontFamily);
+            var body = document.getElementsByTagName("body");
+            alert(body[0].style.backgroundColor);
+            para.style.color = "red";
+            para.style.fontSize = "12em";
         }
     </script>
 </head>
