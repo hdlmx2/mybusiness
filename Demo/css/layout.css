@@ -28,7 +28,7 @@ header {
 header nav {
     background-image: url(../images/navbar.gif);
     background-position: bottom left;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     border-width: 0.1em;
     border-style: solid;
     border-bottom-width: 0;
